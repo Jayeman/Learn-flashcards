@@ -1,0 +1,197 @@
+/* font-family: "Alex Brush", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+/* font-family: "Bebas Neue", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&display=swap');
+
+html {
+    background-image: url("/media/Background_images/Background2.jpg");
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* General body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    max-width: 99%;
+    margin: 0;
+    color: #fff; /* Set text color to white for better visibility against black background */
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+/*----------Nav bar----------*/
+.navigation {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: black;
+    min-height: 20px;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navigation list styles */
+.navigation ul {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 20px 20px;
+}
+
+.navigation li a {
+    font-size: 60px;
+    color: #D4AF37;
+    text-decoration: none;
+    padding: 20px 20px;
+    border: solid black 2px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation li a:hover {
+    background-color: #444;
+    color: #98fb98;
+}
+
+
+
+
+
+
+/* ------------------ Main content section ---------------------- */
+#mode-selection button, #round-selection button, #end-game button {
+    font-size: 50px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFD700;
+    color: black;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#mode-selection button:hover, #round-selection button:hover {
+    background-color: #FF6347;
+    transform: scale(1.1);
+}
+
+section {
+    font-size: 50px;
+    flex-grow: 1;  /* This makes the section take up available space */
+    padding-top: 80px; /* Prevent content from being hidden under the fixed navbar */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+}
+
+/* Container for the game elements */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: black;
+}
+
+/* Question container */
+#question-container {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 44px; /* Larger font size for the question */
+}
+
+/* Question text */
+#question {
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling for answer buttons */
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the buttons */
+    gap: 10px; /* Space between the buttons */
+    width: 100%;
+    justify-items: center; /* Center the buttons within each grid item */
+}
+
+.button {
+    padding: 15px 25px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: #FFD700;
+    color: black;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 90%; /* Ensure all buttons have the same width */
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #FF6347;
+    transform: scale(1.1);
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}
+
+/*-----------------------------Footer------------------------------*/
+.social_container {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center;     /* Center the icons vertically */
+    gap: 30px;               /* Space between the icons */
+    padding: 10px;           /* Add padding around the footer */
+    background-color: #333;  /* Background color for the footer */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social_container img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.social_container img:hover {
+    transform: scale(1.2);
+}

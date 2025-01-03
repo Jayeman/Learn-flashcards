@@ -1,0 +1,137 @@
+/* font-family: "Alex Brush", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+/* font-family: "Bebas Neue", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&display=swap');
+
+html {
+    background-image: url("/media/Background_images/Chosen\ Background\ \(512\).png");
+    border-radius: 100px;
+}
+
+
+
+
+
+/*----------Nav bar----------*/
+/* Navigation styles */
+.navigation {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: black;
+    min-height: 20px;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navigation list styles */
+.navigation ul {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 20px 20px;
+}
+
+.navigation li a {
+    font-size: 60px;
+    color: #D4AF37;
+    text-decoration: none;
+    padding: 20px 20px;
+    border: solid black 2px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation li a:hover {
+    background-color: #444;
+    color: yellow;
+}
+
+/* Account icon container styles */
+.icon-container {
+    position: absolute;
+    top: 15px; /* Aligns the icon with the nav bar padding */
+    right: 20px; /* Positions the icon towards the right */
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Account icon image styles */
+.accounts_icon {
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+/* Dropdown box hidden by default */
+.dropdown-box {
+    display: none; /* Hides the dropdown by default */
+    position: absolute;
+    top: 120px; /* Adjust the vertical position below the icon */
+    right: 20px; /* Ensures the dropdown is 20px from the right edge */
+    background-color: black;
+    border: 2px solid #D4AF37;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px; /* Adds internal padding within the box */
+    min-width: 150px; /* Optional: Ensures a minimum width for the box */
+}
+
+/* Dropdown buttons */
+.dropdown-box button {
+    display: block;
+    width: 100%; /* Full width inside the dropdown */
+    padding: 10px 40px;
+    background-color: #D4AF37;
+    border: none;
+    color: black;
+    font-size: 40px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.dropdown-box button:hover {
+    background-color: yellow;
+}
+
+/* Show dropdown on hover */
+.icon-container:hover .dropdown-box {
+    display: block; /* Shows the dropdown when hovering over the icon container */
+}
+
+
+
+
+
+/*-------------Footer------------*/
+.social_container {
+    display: flex;               /* Align items in a row */
+    justify-content: center;     /* Center the icons horizontally */
+    align-items: center;         /* Center the icons vertically */
+    gap: 30px;                   /* Space between the icons */
+    padding: 10px;               /* Add padding around the footer */
+    background-color: #333;      /* Background color for the footer */
+}
+
+.social_container img {
+    width: 60px;                 /* Set a fixed size for the icons */
+    height: 60px;                /* Keep the icons' aspect ratio */
+    transition: transform 0.3s;  /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.social_container img:hover {
+    transform: scale(1.2);       /* Enlarge icons slightly on hover */
+}
